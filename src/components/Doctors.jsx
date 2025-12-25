@@ -27,7 +27,7 @@ const doctors = [
 
 const Doctors = () => {
     return (
-        <section id="doctors" className="py-24 bg-sky-50/40 relative">
+        <section id="doctors" className="py-12 sm:py-16 md:py-24 bg-sky-50/40 relative">
             <div className="absolute top-0 right-0 w-full h-full opacity-40 pointer-events-none overflow-hidden">
                 <div className="absolute top-1/4 -right-10 w-[500px] h-[500px] bg-blue-100/50 rounded-full blur-3xl" />
             </div>
@@ -36,13 +36,13 @@ const Doctors = () => {
                     initial={{ opacity: 0, y: 10 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="text-center mb-16"
+                    className="text-center mb-8 sm:mb-12 md:mb-16 px-4"
                 >
-                    <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Medical Experts</h2>
-                    <p className="text-gray-500 max-w-xl mx-auto">Led by experienced specialists committed to excellence in healthcare.</p>
+                    <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">Our Medical Experts</h2>
+                    <p className="text-sm sm:text-base text-gray-500 max-w-xl mx-auto">Led by experienced specialists committed to excellence in healthcare.</p>
                 </motion.div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-10">
                     {doctors.map((doctor, index) => (
                         <motion.div
                             key={doctor.name}

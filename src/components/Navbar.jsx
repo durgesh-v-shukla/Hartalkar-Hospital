@@ -37,11 +37,11 @@ const Navbar = () => {
                 <div className="flex justify-between items-center">
 
                     {/* Logo */}
-                    <a href="#" className="flex items-center space-x-3 group">
+                    <a href="#" className="flex items-center space-x-2 sm:space-x-3 group">
                         <div className="relative overflow-hidden rounded-lg bg-white p-1">
-                            <img src={logo} alt="Hartalkar Hospital Logo" className="h-10 w-auto object-contain" />
+                            <img src={logo} alt="Hartalkar Hospital Logo" className="h-8 sm:h-10 w-auto object-contain" />
                         </div>
-                        <span className="text-xl md:text-2xl font-bold tracking-tight text-white drop-shadow-md transition-colors duration-300">
+                        <span className="text-lg sm:text-xl md:text-2xl font-bold tracking-tight text-white drop-shadow-md transition-colors duration-300">
                             Hartalkar Hospital
                         </span>
                     </a>
@@ -88,7 +88,17 @@ const Navbar = () => {
                                 <a
                                     key={link.name}
                                     href={link.href}
-                                    onClick={() => setIsOpen(false)}
+                                    onClick={(e) => {
+                                        setIsOpen(false);
+                                        // Smooth scroll to section
+                                        const target = document.querySelector(link.href);
+                                        if (target) {
+                                            e.preventDefault();
+                                            setTimeout(() => {
+                                                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                                            }, 100);
+                                        }
+                                    }}
                                     className="block py-3 text-base font-medium text-gray-600 hover:text-hospital-teal hover:bg-gray-50 rounded-md px-3"
                                 >
                                     {link.name}

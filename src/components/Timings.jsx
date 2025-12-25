@@ -4,9 +4,9 @@ import { Clock, AlertCircle } from 'lucide-react';
 
 const Timings = () => {
     return (
-        <section id="timings" className="py-20 bg-white">
+        <section id="timings" className="py-12 sm:py-16 md:py-20 bg-white">
             <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="bg-gradient-to-br from-hospital-teal to-blue-600 rounded-3xl p-8 md:p-12 text-white shadow-2xl relative overflow-hidden">
+                <div className="bg-gradient-to-br from-hospital-teal to-blue-600 rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-12 text-white shadow-2xl relative overflow-hidden">
                     {/* Abstract Pattern overlay */}
                     <div className="absolute inset-0 pointer-events-none opacity-[0.08]">
                         <svg className="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
@@ -21,13 +21,13 @@ const Timings = () => {
                     <div className="absolute top-0 right-0 w-64 h-64 bg-white/20 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl opacity-60" />
                     <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/20 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl opacity-60" />
 
-                    <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-10">
+                    <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-6 sm:gap-8 md:gap-10">
                         <div className="flex-1 text-center md:text-left">
-                            <h2 className="text-3xl font-bold mb-4 flex items-center justify-center md:justify-start">
-                                <Clock className="mr-3" />
+                            <h2 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4 flex items-center justify-center md:justify-start">
+                                <Clock className="mr-2 sm:mr-3 w-6 h-6 sm:w-7 sm:h-7" />
                                 OPD Schedule
                             </h2>
-                            <p className="text-teal-100 text-lg mb-6">
+                            <p className="text-teal-100 text-base sm:text-lg mb-4 sm:mb-6">
                                 We are open daily for consultations. Please visit during our designated hours.
                             </p>
 

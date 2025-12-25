@@ -8,8 +8,11 @@ import img2 from '../hospital_related_photo/slide2.png';
 import img3 from '../hospital_related_photo/slide3.png';
 import img4 from '../hospital_related_photo/slide4.png';
 import img5 from '../hospital_related_photo/slide5.png';
+import img6 from '../hospital_related_photo/slide6.png';
+import img7 from '../hospital_related_photo/slide7.png';
+import img8 from '../hospital_related_photo/slide8.png';
 
-const carouselImages = [img1, img2, img3, img4, img5];
+const carouselImages = [img1, img2, img3, img4, img5, img6, img7, img8];
 
 const About = () => {
     // We use a tuple [page, direction] to track the absolute index and the direction of animation
@@ -56,16 +59,16 @@ const About = () => {
 
             {/* Wider Container for "Really Big" feel */}
             <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                <div className="text-center mb-12">
-                    <h2 className="text-3xl md:text-5xl font-bold text-gray-900 tracking-tight">Experience World-Class Care</h2>
-                    <p className="text-gray-600 mt-3 text-lg">Where advanced technology meets compassionate healing.</p>
+                <div className="text-center mb-8 sm:mb-12 px-4">
+                    <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-gray-900 tracking-tight">Experience World-Class Care</h2>
+                    <p className="text-gray-600 mt-2 sm:mt-3 text-base sm:text-lg">Where advanced technology meets compassionate healing.</p>
                 </div>
 
                 {/* Symmetrical 3-Column Grid: 2 Cards - Big Carousel - 2 Cards */}
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center h-auto lg:h-[600px]">
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6 items-center h-auto lg:h-[600px]">
 
                     {/* LEFT SIDE - 2 Cards */}
-                    <div className="lg:col-span-2 space-y-6 order-2 lg:order-1 h-full flex flex-col justify-center py-4">
+                    <div className="lg:col-span-2 space-y-4 sm:space-y-6 order-2 lg:order-1 h-full flex flex-col justify-center py-2 sm:py-4">
                         {/* Card 1 */}
                         <motion.div
                             whileHover={{ scale: 1.05 }}
@@ -92,7 +95,7 @@ const About = () => {
                     </div>
 
                     {/* CENTER CAROUSEL - BIG (Span 8) */}
-                    <div className="lg:col-span-8 h-[400px] lg:h-full order-1 lg:order-2">
+                    <div className="lg:col-span-8 h-[300px] sm:h-[400px] lg:h-full order-1 lg:order-2">
                         <motion.div
                             initial={{ opacity: 0, scale: 0.95 }}
                             whileInView={{ opacity: 1, scale: 1 }}
@@ -140,7 +143,7 @@ const About = () => {
                     </div>
 
                     {/* RIGHT SIDE - 2 Cards */}
-                    <div className="lg:col-span-2 space-y-6 order-3 h-full flex flex-col justify-center py-4">
+                    <div className="lg:col-span-2 space-y-4 sm:space-y-6 order-3 h-full flex flex-col justify-center py-2 sm:py-4">
                         {/* Card 3 */}
                         <motion.div
                             whileHover={{ scale: 1.05 }}

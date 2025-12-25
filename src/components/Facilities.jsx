@@ -11,7 +11,7 @@ const facilities = [
 
 const Facilities = () => {
     return (
-        <section id="facilities" className="py-20 bg-slate-50 relative overflow-hidden">
+        <section id="facilities" className="py-12 sm:py-16 md:py-20 bg-slate-50 relative overflow-hidden">
             {/* Abstract Geometric Background */}
             <div className="absolute inset-0 pointer-events-none opacity-[0.1]">
                 <svg className="absolute top-0 right-0 w-1/2 h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
@@ -21,12 +21,12 @@ const Facilities = () => {
                 <div className="absolute right-20 bottom-20 w-60 h-60 border-4 border-slate-300 rounded-full" />
             </div>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="text-center mb-16">
-                    <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Facilities</h2>
-                    <p className="text-gray-500 max-w-xl mx-auto">State-of-the-art infrastructure for superior care.</p>
+                <div className="text-center mb-8 sm:mb-12 md:mb-16 px-4">
+                    <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">Our Facilities</h2>
+                    <p className="text-sm sm:text-base text-gray-500 max-w-xl mx-auto">State-of-the-art infrastructure for superior care.</p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-6">
                     {facilities.map((facility, index) => (
                         <motion.div
                             key={facility.title}

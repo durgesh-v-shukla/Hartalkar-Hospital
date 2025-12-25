@@ -4,7 +4,7 @@ import { MapPin, ExternalLink } from 'lucide-react';
 
 const Location = () => {
     return (
-        <section id="location" className="py-24 bg-stone-50 relative overflow-hidden">
+        <section id="location" className="py-12 sm:py-16 md:py-24 bg-stone-50 relative overflow-hidden">
             {/* Professional Architectural Grid Background */}
             <div className="absolute inset-0 pointer-events-none opacity-[0.06]">
                 <svg className="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
@@ -17,9 +17,9 @@ const Location = () => {
                 </svg>
             </div>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="text-center mb-12">
-                    <h2 className="text-3xl font-bold text-gray-900 mb-4">Visit Us</h2>
-                    <p className="text-gray-500">Accessible location in the heart of the community.</p>
+                <div className="text-center mb-8 sm:mb-10 md:mb-12 px-4">
+                    <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">Visit Us</h2>
+                    <p className="text-sm sm:text-base text-gray-500">Accessible location in the heart of the community.</p>
                 </div>
 
                 <motion.div
@@ -27,9 +27,9 @@ const Location = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.8 }}
-                    className="bg-white p-4 rounded-3xl shadow-lg border border-gray-100"
+                    className="bg-white p-3 sm:p-4 rounded-2xl sm:rounded-3xl shadow-lg border border-gray-100"
                 >
-                    <div className="w-full h-96 bg-gray-200 rounded-2xl overflow-hidden relative group">
+                    <div className="w-full h-64 sm:h-80 md:h-96 bg-gray-200 rounded-xl sm:rounded-2xl overflow-hidden relative group">
                         <iframe
                             src="https://maps.google.com/maps?q=21.2485491,75.2952524&t=&z=15&ie=UTF8&iwloc=&output=embed"
                             width="100%"

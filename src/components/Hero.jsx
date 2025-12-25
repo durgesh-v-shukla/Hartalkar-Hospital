@@ -86,32 +86,32 @@ const Hero = () => {
             </motion.div>
 
             {/* Content */}
-            <div className="relative z-20 text-center max-w-5xl px-4">
+            <div className="relative z-20 text-center max-w-5xl px-4 sm:px-6">
                 <motion.div
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 1, ease: "circOut" }}
-                    className="border-y border-white/10 py-10 backdrop-blur-sm bg-black/20 rounded-3xl"
+                    className="border-y border-white/10 py-6 sm:py-10 px-4 sm:px-6 backdrop-blur-sm bg-black/20 rounded-2xl sm:rounded-3xl"
                 >
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.3 }}
-                        className="flex items-center justify-center space-x-3 mb-6"
+                        className="flex items-center justify-center space-x-2 sm:space-x-3 mb-4 sm:mb-6"
                     >
-                        <div className="h-px w-12 bg-teal-400/50" />
-                        <span className="text-teal-200 tracking-[0.2em] text-sm uppercase font-medium">Compassionate Care</span>
-                        <div className="h-px w-12 bg-teal-400/50" />
+                        <div className="h-px w-8 sm:w-12 bg-teal-400/50" />
+                        <span className="text-teal-200 tracking-[0.15em] sm:tracking-[0.2em] text-xs sm:text-sm uppercase font-medium">Compassionate Care</span>
+                        <div className="h-px w-8 sm:w-12 bg-teal-400/50" />
                     </motion.div>
 
-                    <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white tracking-tight mb-4 drop-shadow-2xl font-serif">
+                    <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-white tracking-tight mb-3 sm:mb-4 drop-shadow-2xl font-serif px-2">
                         HARTALKAR
                     </h1>
-                    <h2 className="text-2xl md:text-4xl font-light text-white/90 tracking-widest uppercase mb-8">
+                    <h2 className="text-xl sm:text-2xl md:text-4xl font-light text-white/90 tracking-wider sm:tracking-widest uppercase mb-6 sm:mb-8 px-2">
                         HOSPITAL
                     </h2>
 
-                    <p className="text-lg md:text-xl text-teal-50 max-w-2xl mx-auto font-light leading-relaxed italic opacity-90">
+                    <p className="text-base sm:text-lg md:text-xl text-teal-50 max-w-2xl mx-auto font-light leading-relaxed italic opacity-90 px-4">
                         "Serving our community with humble hearts and healing hands. We treat every patient like family."
                     </p>
                 </motion.div>
@@ -120,22 +120,22 @@ const Hero = () => {
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.8 }}
-                    className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-12"
+                    className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-4 sm:gap-6 mt-8 sm:mt-12 px-4"
                 >
                     <a
                         href="#location"
-                        className="relative px-8 py-4 bg-hospital-teal text-white font-bold rounded-full hover:bg-teal-600 transition-all duration-300 shadow-lg hover:shadow-teal-500/30 flex items-center group"
+                        className="relative px-6 sm:px-8 py-3 sm:py-4 bg-hospital-teal text-white font-bold text-sm sm:text-base rounded-full hover:bg-teal-600 transition-all duration-300 shadow-lg hover:shadow-teal-500/30 flex items-center justify-center group w-full sm:w-auto"
                     >
                         <span className="relative z-10 flex items-center">
-                            <MapPin className="mr-2 w-5 h-5 group-hover:animate-bounce" /> View Location
+                            <MapPin className="mr-2 w-4 h-4 sm:w-5 sm:h-5 group-hover:animate-bounce" /> View Location
                         </span>
                     </a>
 
                     <a
                         href="#contact"
-                        className="relative px-8 py-4 bg-white text-hospital-teal font-bold rounded-full hover:bg-gray-50 transition-all duration-300 shadow-lg flex items-center"
+                        className="relative px-6 sm:px-8 py-3 sm:py-4 bg-white text-hospital-teal font-bold text-sm sm:text-base rounded-full hover:bg-gray-50 transition-all duration-300 shadow-lg flex items-center justify-center w-full sm:w-auto"
                     >
-                        Contact Us <ChevronRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                        Contact Us <ChevronRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
                     </a>
                 </motion.div>
             </div>

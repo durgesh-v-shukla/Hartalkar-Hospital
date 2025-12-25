@@ -4,7 +4,7 @@ import logo from '../assets/logo-placeholder.png'; // Using the imported logo
 
 const Footer = () => {
     return (
-        <footer className="bg-slate-900 text-slate-300 relative overflow-hidden pt-16 pb-8 border-t border-slate-800">
+        <footer className="bg-slate-900 text-slate-300 relative overflow-hidden pt-10 sm:pt-12 md:pt-16 pb-6 sm:pb-8 border-t border-slate-800">
             {/* Abstract Background Pattern for Footer */}
             <div className="absolute inset-0 pointer-events-none opacity-[0.03]">
                 <svg className="absolute w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
@@ -14,7 +14,7 @@ const Footer = () => {
             </div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mb-16">
+                <div className="grid grid-cols-1 md:grid-cols-12 gap-8 sm:gap-10 md:gap-12 mb-10 sm:mb-12 md:mb-16">
 
                     {/* Brand Column - Spans 4 columns */}
                     <div className="md:col-span-4 space-y-6">

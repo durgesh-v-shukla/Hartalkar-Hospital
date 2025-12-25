@@ -3,7 +3,7 @@ import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 
 const Contact = () => {
     return (
-        <section id="contact" className="py-24 bg-white relative overflow-hidden">
+        <section id="contact" className="py-12 sm:py-16 md:py-24 bg-white relative overflow-hidden">
             {/* Tech Grid & Connecting Lines Abstract Pattern */}
             <div className="absolute inset-0 pointer-events-none opacity-[0.08]">
                 <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(#0f766e 1px, transparent 1px)', backgroundSize: '30px 30px' }}></div>
@@ -14,16 +14,16 @@ const Contact = () => {
                 <div className="absolute bottom-0 right-0 w-96 h-96 bg-teal-50 rounded-full blur-3xl" />
             </div>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 md:gap-16 items-center">
 
-                    <div>
-                        <h2 className="text-4xl font-bold text-gray-900 mb-6">Get in Touch</h2>
-                        <p className="text-lg text-gray-600 mb-10 leading-relaxed">
+                    <div className="px-2">
+                        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">Get in Touch</h2>
+                        <p className="text-base sm:text-lg text-gray-600 mb-6 sm:mb-8 md:mb-10 leading-relaxed">
                             Have questions or need assistance? Reach out to us. We are here to help you and your family.
                         </p>
 
-                        <div className="space-y-8">
-                            <div className="flex items-start space-x-6 group">
+                        <div className="space-y-5 sm:space-y-6 md:space-y-8">
+                            <div className="flex items-start space-x-4 sm:space-x-6 group">
                                 <div className="w-12 h-12 bg-teal-50 rounded-xl flex items-center justify-center text-hospital-teal group-hover:bg-hospital-teal group-hover:text-white transition-all duration-300">
                                     <MapPin size={24} />
                                 </div>
@@ -57,9 +57,9 @@ const Contact = () => {
                         </div>
                     </div>
 
-                    <div className="relative">
-                        <div className="absolute inset-0 bg-gradient-to-tr from-hospital-teal to-blue-500 rounded-3xl rotate-3 opacity-20 transform scale-105 pointer-events-none" />
-                        <div className="bg-white p-8 rounded-3xl shadow-xl border border-gray-100 relative z-10">
+                    <div className="relative px-2">
+                        <div className="absolute inset-0 bg-gradient-to-tr from-hospital-teal to-blue-500 rounded-2xl sm:rounded-3xl rotate-3 opacity-20 transform scale-105 pointer-events-none" />
+                        <div className="bg-white p-5 sm:p-6 md:p-8 rounded-2xl sm:rounded-3xl shadow-xl border border-gray-100 relative z-10">
                             <form className="space-y-6">
                                 <div>
                                     <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
