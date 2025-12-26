@@ -6,6 +6,13 @@ import drVinit from '../dr_images/dr_vinit.jpeg';
 import drVikas from '../dr_images/dr_vikas.jpeg';
 
 const doctors = [
+    
+    {
+        name: "Dr. Vikas Hartalkar",
+        title: "General Surgeon",
+        image: drVikas,
+        desc: "Skilled surgeon dedicated to effective interventions and compassionate pre- and post-operative care for optimal patient outcomes."
+    },
     {
         name: "Dr. Amit Hartalkar",
         title: "Consultant Physician",
@@ -17,12 +24,6 @@ const doctors = [
         title: "Director, Consultant General & Laparoscopic Surgeon",
         image: drVinit,
         desc: "Expert in advanced laparoscopic and minimal access surgeries, leading effectively with a focus on patient safety and recovery."
-    },
-    {
-        name: "Dr. Vikas Hartalkar",
-        title: "General Surgeon",
-        image: drVikas,
-        desc: "Skilled surgeon dedicated to effective interventions and compassionate pre- and post-operative care for optimal patient outcomes."
     },
     {
         name: "Dr. Neeta Hartalkar",
