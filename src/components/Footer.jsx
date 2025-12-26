@@ -14,7 +14,7 @@ const Footer = () => {
             </div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                <div className="grid grid-cols-1 md:grid-cols-12 gap-8 sm:gap-10 md:gap-12 mb-10 sm:mb-12 md:mb-16">
+                <div className="grid grid-cols-1 md:grid-cols-9 gap-8 sm:gap-10 md:gap-12 mb-10 sm:mb-12 md:mb-16">
 
                     {/* Brand Column - Spans 4 columns */}
                     <div className="md:col-span-4 space-y-6">
@@ -80,18 +80,6 @@ const Footer = () => {
                                 <span className="text-slate-400 hover:text-white transition-colors">info@hartalkarhospital.com</span>
                             </li>
                         </ul>
-                    </div>
-
-                    {/* Newsletter - Spans 3 columns */}
-                    <div className="md:col-span-3">
-                        <h4 className="text-white font-semibold mb-6 flex items-center text-base">Newsletter</h4>
-                        <p className="text-sm text-slate-400 mb-4 leading-relaxed">Subscribe to receive health tips and hospital updates directly to your inbox.</p>
-                        <div className="flex flex-col space-y-3">
-                            <input type="email" placeholder="Your email address" className="bg-slate-800 text-white px-4 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-hospital-teal/50 w-full text-sm placeholder:text-slate-600 border border-slate-700" />
-                            <button className="bg-hospital-teal hover:bg-teal-600 text-white px-6 py-3 rounded-xl transition-all duration-300 flex items-center justify-center shadow-lg hover:shadow-hospital-teal/25 font-medium text-sm">
-                                Subscribe <ArrowRight size={16} className="ml-2" />
-                            </button>
-                        </div>
                     </div>
                 </div>
 
