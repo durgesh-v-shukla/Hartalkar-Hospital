@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { UserRound } from 'lucide-react';
 import drAmit from '../dr_images/dr_amit.png';
 import drVinit from '../dr_images/dr_vinit.jpeg';
 import drVikas from '../dr_images/dr_vikas.jpeg';
@@ -22,6 +23,12 @@ const doctors = [
         title: "General Surgeon",
         image: drVikas,
         desc: "Skilled surgeon dedicated to effective interventions and compassionate pre- and post-operative care for optimal patient outcomes."
+    },
+    {
+        name: "Dr. Neeta Hartalkar",
+        title: "Diagnostic Medical Sonographer",
+        image: null, // Placeholder - will be replaced when image is added to dr_images folder
+        desc: "Experienced sonographer specializing in ultrasound imaging and diagnostics, providing accurate assessments for maternal care and general medical imaging."
     }
 ];
 
@@ -42,7 +49,7 @@ const Doctors = () => {
                     <p className="text-sm sm:text-base text-gray-500 max-w-xl mx-auto">Led by experienced specialists committed to excellence in healthcare.</p>
                 </motion.div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-6">
                     {doctors.map((doctor, index) => (
                         <motion.div
                             key={doctor.name}
@@ -56,13 +63,21 @@ const Doctors = () => {
                             {/* Photo Frame Effect */}
                             <div className="p-3 bg-white">
                                 <div className="relative h-80 overflow-hidden bg-slate-100 rounded-2xl border-[3px] border-hospital-teal/20 group-hover:border-hospital-teal/50 transition-colors duration-300">
-                                    <img
-                                        src={doctor.image}
-                                        alt={doctor.name}
-                                        className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
-                                    />
-                                    {/* stronger gradient for text visibility */}
-                                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent" />
+                                    {doctor.image ? (
+                                        <>
+                                            <img
+                                                src={doctor.image}
+                                                alt={doctor.name}
+                                                className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                                            />
+                                            {/* stronger gradient for text visibility */}
+                                            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent" />
+                                        </>
+                                    ) : (
+                                        <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-teal-50 to-blue-50">
+                                            <UserRound size={120} className="text-hospital-teal/30" strokeWidth={1.5} />
+                                        </div>
+                                    )}
 
                                     <div className="absolute bottom-4 left-4 right-4 text-white">
                                         <h3 className="text-xl font-bold tracking-tight mb-1">{doctor.name}</h3>
