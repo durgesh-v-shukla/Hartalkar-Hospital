@@ -1,14 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Stethoscope, Heart, Building, CheckCircle, Activity, Pill } from 'lucide-react';
+import { Stethoscope, Heart, Building, Activity, Pill, BedDouble } from 'lucide-react';
 
 const services = [
-    { icon: Stethoscope, title: "General Medicine", desc: "Expert consultation for all general health concerns." },
-    { icon: Heart, title: "Family Healthcare", desc: "Comprehensive care for every member of your family." },
-    { icon: Building, title: "OPD & IPD Facilities", desc: "Well-equipped outpatient and inpatient departments." },
-    { icon: Activity, title: "Emergency Care", desc: "24/7 medical support for critical situations." },
-    { icon: CheckCircle, title: "Preventive Checkups", desc: "Routine screenings to maintain good health." },
-    { icon: Pill, title: "Pharmacy Support", desc: "Convenient access to necessary medications." },
+    { icon: Stethoscope, title: "General Medicine", desc: "Expert consultation for all general health concerns with experienced physicians." },
+    { icon: Heart, title: "Family Healthcare", desc: "Comprehensive care for every member of your family, from infants to elderly." },
+    { icon: Building, title: "OPD & IPD Facilities", desc: "Well-equipped outpatient and inpatient departments with modern amenities." },
+    { icon: Activity, title: "Emergency Services", desc: "24/7 rapid response medical team available for critical care and urgent situations." },
+    { icon: Pill, title: "In-House Pharmacy", desc: "Fully stocked pharmacy ensuring convenient access to prescribed medicines." },
+    { icon: BedDouble, title: "Comfortable Wards", desc: "Clean, hygienic, and well-maintained wards for patient comfort and recovery." },
 ];
 
 const Services = () => {
@@ -30,8 +30,8 @@ const Services = () => {
                     viewport={{ once: true }}
                     className="text-center mb-8 sm:mb-12 md:mb-16 px-4"
                 >
-                    <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">Our Services</h2>
-                    <p className="text-sm sm:text-base text-gray-500 max-w-xl mx-auto">Comprehensive medical services designed for your well-being.</p>
+                    <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">Services & Facilities</h2>
+                    <p className="text-sm sm:text-base text-gray-500 max-w-xl mx-auto">Comprehensive medical care with state-of-the-art infrastructure for your well-being.</p>
                 </motion.div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-8">

@@ -3,7 +3,6 @@ import Layout from './components/Layout';
 import Hero from './components/Hero';
 import About from './components/About';
 import Services from './components/Services';
-import Facilities from './components/Facilities';
 import Doctors from './components/Doctors';
 import Timings from './components/Timings';
 import Location from './components/Location';
@@ -16,7 +15,6 @@ function App() {
       <About />
       <Doctors />
       <Services />
-      <Facilities />
       <Timings />
       <Location />
       <Contact />
